@@ -1,0 +1,11 @@
+
+
+<div>
+  <h2>{{ message }}</h2>
+  <input [(ngModel)]="letter" placeholder="Enter a letter" />
+  <button (click)="makeGuess()">Guess</button>
+  <div class="alphabet">
+    <button *ngFor="let char of alphabet" (click)="makeGuessWithParam(char)">{{ char }}</button>
+  </div>
+  <button (click)="restartGame()">Restart Game</button>
+</div>

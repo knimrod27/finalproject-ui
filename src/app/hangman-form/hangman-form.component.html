@@ -1,0 +1,28 @@
+<div class ="form-container"> 
+    <form [formGroup] = "wordForm" (ngSubmit)="onSubmit()">
+        <mat-form-field appearance="fill">
+            <mat-label>Word</mat-label>
+            <input matInput id = "word" type  = "text" formControlName = "word">
+
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Category</mat-label>
+            <input matInput id = "category" type  = "text" formControlName = "category">
+            
+        </mat-form-field>
+
+        <div class = "buttons-container">
+            <button mat-raised-button color ="primary" style=" margin: 10px;"
+             [disabled] = "!wordForm.valid"
+             type = "submit"
+             >Save </button>
+            <button mat-raised-button color = "warn" (click)="cancel()">
+                Cancel
+            </button>
+
+        </div>
+
+    </form>
+
+</div>

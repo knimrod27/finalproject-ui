@@ -1,0 +1,12 @@
+
+
+<div>
+  <h2>{{ message }}</h2>
+  <div>
+    <h2> Pick a category to start the game</h2>
+    <button *ngFor="let category of categories" (click)="selectCategory(category)">
+      {{ category }}
+    </button>
+  </div>
+</div>
+

@@ -1,0 +1,22 @@
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  input {
+    margin: 5px;
+  }
+  button {
+    margin: 5px;
+  }
+  .alphabet {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  .alphabet button {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+  }
