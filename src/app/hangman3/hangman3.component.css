@@ -1,28 +1,28 @@
-div {
+ div {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
-  }
+  } 
   input {
     margin: 5px;
   }
   button {
     margin: 5px;
-  }
+  } 
   .alphabet {
     display: flex;
-    flex-wrap: wrap;
+    
     margin-top: 10px;
-  }
-  /*.alphabet button {
+  } 
+  .alphabet-button {
     width: 30px;
     height: 30px;
     margin: 5px;
-  } */
+  } 
 
-  .alphabet-button {
-    flex: 0 0 calc(16.666% - 10px); /* Adjust as needed */
+  button {
+    flex: 0 0 calc(16.666% - 10px); 
     margin: 5px;
     padding: 10px 20px;
     font-size: 16px;
@@ -35,4 +35,5 @@ div {
     background-color: #fff;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
-  }
+  }  
+  
