@@ -7,7 +7,7 @@ import { Hangman3Component } from './hangman3/hangman3.component';
 const routes: Routes = [
   {path: 'hangman', component: Hangman2Component
 } ,
-{path: 'hangman/category', component: Hangman1Component
+{path: 'hangman/play', component: Hangman1Component
 } ,
 {
   path: 'hangman/guess', component: Hangman3Component

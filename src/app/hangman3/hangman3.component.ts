@@ -18,20 +18,10 @@ export class Hangman3Component implements OnInit {
   ngOnInit(): void {
   }
 
-  //makeGuess(): void {
-  /*this.hangmansService.guessLetter(this.letter).subscribe(
-      (response) => {
-        console.log('Response from server:', response);
-        this.message = response;
-      },
-      (error) => {
-        console.error('Error making a guess:', error);
-        this.message = 'Error making a guess. Please try again.';
-      }
-    ); */
+  
 
     makeGuess(): void {
-      // Call the service to make a guess
+    
       this.hangmansService.guessLetter(this.letter).subscribe(
         (response) => {
           console.log('Response from server:', response);
@@ -39,7 +29,7 @@ export class Hangman3Component implements OnInit {
         },
         (error) => {
           console.error('Error making a guess:', error);
-          this.message = 'Error making a guess. Please try again.';
+          this.message = 'Game over. Start a new game.';
         }
       );
     }
@@ -50,7 +40,7 @@ export class Hangman3Component implements OnInit {
     }
   
   restartGame(): void {
-    this.router.navigate(['hangman/category']); 
+    this.router.navigate(['hangman/play']); 
   }
 }
  
