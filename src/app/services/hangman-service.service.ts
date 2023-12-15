@@ -33,7 +33,7 @@ export class HangmanServiceService {
 
 
   startGame(category: any) : Observable<any> {
-    return this.httpClient.get<any>(this.url + '/category/' + category, {responseType: 'text' as 'json'});
+    return this.httpClient.get<any>(this.url + '/play/' + category, {responseType: 'text' as 'json'});
   }
 
 
